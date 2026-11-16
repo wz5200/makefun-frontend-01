@@ -1,5 +1,1 @@
-[
-  { "file": "1-board.jpg", "path": "#/", "viewport": { "width": 1280, "height": 800 } },
-  { "file": "2-bounty.jpg", "path": "#/bounty/threejs-fps-02", "viewport": { "width": 1280, "height": 800 } },
-  { "file": "3-bounty.jpg", "path": "#/bounty/bring-the-humans-01", "viewport": { "width": 1280, "height": 800 } }
-]
+[{"file":"1-board.jpg","path":"#/","viewport":{"height":800,"width":1280}},{"file":"2-bounty.jpg","path":"#/bounty/makefun-frontend-01","viewport":{"height":800,"width":1280}},{"file":"3-leaderboard.jpg","path":"#/bounty/makefun-frontend-01/leaderboard","viewport":{"height":800,"width":1280}}]
