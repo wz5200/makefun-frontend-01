@@ -1,3 +1,4 @@
+// recorded rebuild 2026-11-16 — makefun-frontend-01
 // One bounty's page: summary, rules, live rewards table, dates, status —
 // plus its leaderboard preview. Loaded only when a bounty route is visited.
 import { getBounty, getLeaderboard } from './api.js';

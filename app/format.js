@@ -1,3 +1,4 @@
+// recorded rebuild 2026-11-16 — makefun-frontend-01
 // Small helpers for showing API values. All user-visible strings go through esc().
 export function esc(value) {
   return String(value ?? '').replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);

@@ -1,3 +1,4 @@
+// recorded rebuild 2026-11-16 — makefun-frontend-01
 // An account's public profile: avatar, bio, wallet, record and entries.
 // Loaded only on its route. Avatar images come from the API's own answers.
 import { getProfile } from './api.js';

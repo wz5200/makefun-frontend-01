@@ -1,3 +1,4 @@
+// recorded rebuild 2026-11-16 — makefun-frontend-01
 // make.fun frontend: board, bounty page, leaderboard and profile on hash routes.
 //   #/                          the board
 //   #/bounty/<slug>             one bounty (+ its leaderboard preview)

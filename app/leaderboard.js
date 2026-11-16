@@ -1,3 +1,4 @@
+// recorded rebuild 2026-11-16 — makefun-frontend-01
 // A bounty's full leaderboard, 25 rows a page. Loaded only on its route.
 import { getLeaderboard } from './api.js';
 import { esc, pct } from './format.js';

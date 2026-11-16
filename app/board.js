@@ -1,3 +1,4 @@
+// recorded rebuild 2026-11-16 — makefun-frontend-01
 // The bounty board: live pots, fees, time left, entries — searchable, sortable,
 // filterable without another request. Rows are links; every bounty has its own URL.
 import { esc, money, timeLeft, stillOpen } from './format.js';

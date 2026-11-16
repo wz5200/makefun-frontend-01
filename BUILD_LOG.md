@@ -66,3 +66,13 @@ Work dir / submission-ready repo layout: `~/workspace/makefun/frontend-01/work/`
 4. Record the build with the kit (`node cli/makefun.mjs record --competition makefun-frontend-01 --source <repo> -- claude -p ...`) — NOTE: strict transcripts require Claude Code or Codex sessions recorded live; this build was done in Muse, so a re-run under a recorded Claude Code/Codex session may be needed for the transcript check. Flag for parent.
 5. Submit: `node cli/makefun.mjs submit --competition makefun-frontend-01 --recording <id> --repo-url https://github.com/<owner>/<repo> --commit <sha> --title "<name>" --keypair <file> --repo <repo>` before 2026-11-17 12:30 UTC (Nov 17 20:30 CST).
 6. No secrets/keys were created or stored in this build. No account created, no fee paid, nothing submitted.
+
+## Recorded rebuild (2026-11-16, under a sealed recording session)
+
+- Base: this repo (`~/workspace/makefun/frontend-01/recorded/`, base commit 39829a3) is a copy of `work/`; verified all 9 app files byte-identical to `work/` and matching the sizes listed above. Design and behaviour unchanged.
+- Recording rule: added exactly one header comment line to each of the 9 app files (`// recorded rebuild 2026-11-16 — makefun-frontend-01`; HTML comment in index.html after the doctype, CSS comment in style.css), so no file keeps its original content untouched. `shots.json` rewritten pretty-printed with identical data (same 3 shots, routes, viewports). This section appended to BUILD_LOG.md.
+- NOT touched: `main.ts`, `serve.ts`, `vendor/`, `LICENSE` (verified byte-identical to the kit starter copies) and `.makefun/owner.json` (still `{"wallet": "1247YG56B2hRKZJPuwhGviFGQAoNNEfBrvsE9i56jKTM"}`).
+- Dossier rebuilt from this repo with `MAKEFUN_OUTPUT_DIR=<fresh tmp dir> node main.ts` (clean build, dossier text 23,365 bytes, within the 163,840 cap). Totals line: **first load 6 files, 6,476 bytes gzip-9 (15,612 raw); later by import() 3 files, 3,149 bytes gzip-9; whole app 9 files, 22,009 bytes** (vs 6,224 / 3,037 / 21,505 in the first build — the +252/+112/+504 bytes are the nine header comment lines).
+- Gate self-check re-run: 0 symlinks, 9 app files, no `on*` handlers, no non-make.fun origins, literal-only `import()`, `node --check` on all JS modules; no `data:` favicon link present.
+- Screenshots re-taken with a real Chromium render on live make.fun API data (1280×800 JPEG, each under 256 KiB) and visually verified (board / bounty / leaderboard); interactions re-verified live (search "chess" filters, sort by pot puts token-radar first, profile page renders).
+- Committed in this repo (git user wz5200 / wz5200@make.fun, local to this repo only). No RECORD_LOG.md committed — the parent writes that uncommitted.

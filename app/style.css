@@ -1,3 +1,4 @@
+/* recorded rebuild 2026-11-16 — makefun-frontend-01 */
 :root { --ink: #17161a; --dim: #5b5966; --line: #e4e2ea; --accent: #4f46e5; --pot: #0a7a42; --warn: #b3261e; --bg: #fff; --soft: #f6f5fa; }
 * { box-sizing: border-box; }
 body { margin: 0 auto; max-width: 1020px; padding: 0 16px 48px; font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); background: var(--bg); }

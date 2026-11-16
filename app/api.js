@@ -1,3 +1,4 @@
+// recorded rebuild 2026-11-16 — makefun-frontend-01
 // make.fun public API, read-only GET, CORS open. Answers are cached in memory
 // and revalidated with ETag / If-None-Match (the API's tags turn each minute),
 // so a view re-visit costs one request at most, usually a 304 with no body.
