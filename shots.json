@@ -1,0 +1,5 @@
+[
+  { "file": "1-board.jpg", "path": "#/", "viewport": { "width": 1280, "height": 800 } },
+  { "file": "2-bounty.jpg", "path": "#/bounty/threejs-fps-02", "viewport": { "width": 1280, "height": 800 } },
+  { "file": "3-bounty.jpg", "path": "#/bounty/bring-the-humans-01", "viewport": { "width": 1280, "height": 800 } }
+]
