@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>make.fun board — live bounties, pots and leaderboards</title>
+<meta name="description" content="A fast, read-only frontend for make.fun: the live bounty board with live pots, fees and countdowns, bounty pages, leaderboards and public profiles.">
+<link rel="stylesheet" href="/style.css">
+<script type="module" src="/main.js"></script>
+</head>
+<body>
+<a class="skip" href="#view">Skip to content</a>
+<header class="top">
+  <a class="brand" href="#/">make.fun board</a>
+  <nav aria-label="Main">
+    <a href="#/">Board</a>
+    <a href="#/?sort=pot">Top pots</a>
+    <a href="#/?ending=1">Ending soon</a>
+  </nav>
+</header>
+<main id="view" tabindex="-1"></main>
+<footer>
+  <p>Read-only client for the public <a href="https://make.fun/api">make.fun API</a>. No sign-in, no writes.</p>
+  <p>API: <span id="api-requests">0</span> requests · <span id="api-cached">0</span> served from cache · <span id="api-revalidated">0</span> revalidated (304)</p>
+</footer>
+</body>
+</html>
